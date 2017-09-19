@@ -63,6 +63,12 @@ int main()
 
 }
 
+/*
+Descricao
+    Funcao responsavel pela selection sort
+Parametro
+    vetor de numeros inteiros
+*/
 void selectionSort ( int vector[LENGHT] )
 {
     int i, j, aux;
@@ -86,6 +92,12 @@ void selectionSort ( int vector[LENGHT] )
 }
 
 
+/*
+Descricao
+    Funcao responsavel pela bubble sort
+Parametro
+    vetor de numeros inteiros
+*/
 void bubbleSort ( int vector[LENGHT] )
 {
     int i, j, aux;
@@ -109,6 +121,13 @@ void bubbleSort ( int vector[LENGHT] )
     system("cls");
 }
 
+
+/*
+Descricao
+    Funcao responsavel pela insertion sort
+Parametro
+    vetor de numeros inteiros
+*/
 void InsertionSort( int vetor[] )
 {
 	int i, k, temp;
@@ -134,6 +153,15 @@ void InsertionSort( int vetor[] )
     system("cls");
 }
 
+
+/*
+Descricao
+    Funcao responsavel pelo quick sort
+Parametro
+    vetor de numeros inteiros
+    unicio do array
+    final do array
+*/
 void QuickSort(int vetor[LENGHT], int inicio, int fim)
 {
 	int pivo, aux, i, j, meio;
@@ -161,6 +189,15 @@ void QuickSort(int vetor[LENGHT], int inicio, int fim)
    if(i < fim) QuickSort(vetor, i, fim);
 }
 
+
+/*
+Descricao
+    Funcao responsavel pela impressao e leitura da opcao do menu
+Parametro
+    vetor de numeros inteiros
+Retorno
+    inteiro - opcao do menu
+*/
 int printMenu()
 {
     int option = 0;
@@ -180,6 +217,12 @@ int printMenu()
 }
 
 
+/*
+Descricao
+    Funcao responsavel pela impressao do antes e depois do array
+Parametro
+    vetor de numeros inteiros
+*/
 void printMsg( int vector[LENGHT], int option )
 {
     switch (option)
@@ -200,6 +243,13 @@ void printMsg( int vector[LENGHT], int option )
     }
 }
 
+
+/*
+Descricao
+    Funcao responsavel pela selection sort
+Parametro
+    vetor de numeros inteiros
+*/
 void printArray( int vector[LENGHT] )
 {
     int i;
@@ -220,6 +270,13 @@ void printArray( int vector[LENGHT] )
     printf("\n");
 }
 
+
+/*
+Descricao
+    Funcao responsavel por salvar os valores no array
+Parametro
+    vetor de numeros inteiros
+*/
 void vectorRead( int vector[] )
 {
 	int i;
